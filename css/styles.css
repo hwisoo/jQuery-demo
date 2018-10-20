@@ -1,4 +1,10 @@
 .jumbotron {
+  justify-content: center;
   width: 85%;
   margin:auto;
+  max-height: 150px;
+}
+
+.row {
+  margin-bottom: 20px;
 }
