@@ -11,7 +11,7 @@ $(document).ready(function(){
     $("#fadeBox").fadeToggle(1300);
   });
 
-  //jQuery Slide Effects
+  // jQuery Slide Effects
   $("#slideDownBtn").click(function(){
     $("#slideBox").slideDown(1300);
   });
@@ -22,7 +22,7 @@ $(document).ready(function(){
     $("#slideBox").slideToggle(1300);
   });
 
-  //jQuery Animate Movement
+  // jQuery Animate Movement
   $("#moveRightBtn").click(function(){
     $("#moveBox").animate({
       left: 400
@@ -51,7 +51,7 @@ $(document).ready(function(){
     });
   });
 
-  //JQuery Animate Size
+  // jQuery Animate Size
   $("#makeSmallBtn").click(function(){
     var box = $("#sizeBox");
       box.animate({
@@ -78,6 +78,35 @@ $(document).ready(function(){
         box.animate({
           width:'85%'
         });
+    });
+
+    // jQuery Opacity
+    $("#transparentBtn").click(function(){
+      var box = $("#opacityBox");
+      box.animate({
+        opacity: '0.2'
+      });
+    });
+    $("#opaqueBtn").click(function(){
+      var box = $("#opacityBox");
+      box.animate({
+        opacity: 1
+      });
+    });
+    $("#opacityBtn").click(function(){
+      var box = $("#opacityBox");
+      box.animate({
+        opacity: '0.2'
+      });
+      box.animate({
+        opacity: '1'
+      });
+      box.animate({
+        opacity: '0'
+      });
+      box.animate({
+        opacity:'1'
+      });
     });
   });
 
