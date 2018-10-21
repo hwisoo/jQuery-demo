@@ -22,4 +22,32 @@ $(document).ready(function(){
     $("#slideBox").slideToggle(1500);
   });
 
-})
+  //jQuery Animate Movement
+  $("#moveRightBtn").click(function(){
+    $("#moveBox").animate({
+      left: 500
+    });
+  });
+  $("#moveLeftBtn").click(function(){
+    $("#moveBox").animate({
+      left: 0
+    });
+  });
+  $("#moveAroundBtn").click(function(){
+    var box = $("#moveBox");
+    box.animate({
+      left: 300
+    });
+    box.animate({
+      top: 150
+    });
+    box.animate({
+      left: 0,
+      top: 150
+    });
+    box.animate({
+      left: 0,
+      top: 0
+    });
+  });
+});
