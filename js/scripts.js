@@ -25,7 +25,7 @@ $(document).ready(function(){
   //jQuery Animate Movement
   $("#moveRightBtn").click(function(){
     $("#moveBox").animate({
-      left: 500
+      left: 400
     });
   });
   $("#moveLeftBtn").click(function(){
@@ -39,15 +39,46 @@ $(document).ready(function(){
       left: 300
     });
     box.animate({
-      top: 150
+      top: 50
     });
     box.animate({
       left: 0,
-      top: 150
+      top: 50
     });
     box.animate({
       left: 0,
       top: 0
     });
   });
-});
+
+  //JQuery Animate Size
+  $("#makeSmallBtn").click(function(){
+    var box = $("#sizeBox");
+      box.animate({
+        width:'30%'
+      });  
+    });
+    $("#makeBigBtn").click(function(){
+      var box = $("#sizeBox");
+        box.animate({
+          width:'85%'
+      });
+    });
+    $("#sizeChangeBtn").click(function(){
+      var box = $("#sizeBox");
+        box.animate({
+          width:'35%'
+        });
+        box.animate({
+          width:'85%'
+        });
+        box.animate({
+          width:'20%'
+        });
+        box.animate({
+          width:'85%'
+        });
+    });
+  });
+
+
