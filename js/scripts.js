@@ -2,24 +2,24 @@ $(document).ready(function(){
   
   // jQuery Fade Effects
   $("#fadeOutBtn").click(function(){
-    $("#fadeBox").fadeOut(1500);
+    $("#fadeBox").fadeOut(1300);
   });
   $("#fadeInBtn").click(function(){
-    $("#fadeBox").fadeIn(1500);
+    $("#fadeBox").fadeIn(1300);
   });
   $("#fadeToggleBtn").click(function(){
-    $("#fadeBox").fadeToggle(1500);
+    $("#fadeBox").fadeToggle(1300);
   });
 
   //jQuery Slide Effects
   $("#slideDownBtn").click(function(){
-    $("#slideBox").slideDown(1500);
+    $("#slideBox").slideDown(1300);
   });
   $("#slideUpBtn").click(function(){
-    $("#slideBox").slideUp(1500);
+    $("#slideBox").slideUp(1300);
   });
   $("#slideToggleBtn").click(function(){
-    $("#slideBox").slideToggle(1500);
+    $("#slideBox").slideToggle(1300);
   });
 
   //jQuery Animate Movement
